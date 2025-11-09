@@ -35,8 +35,6 @@ header h1 {
 }
 .parent {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-rows: repeat(5, 1fr); */
     gap: 8px;
 }
     
@@ -62,7 +60,6 @@ header h1 {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    object-fit: cover;
 }
 .hp{
     display: flex;
@@ -141,7 +138,7 @@ header h1 {
 }
 
 .div6 {
-    grid-column-start: 3;
+    /* grid-column-start: 3; */
     grid-row-start: 3;
     border: solid;
     padding: 20px;
@@ -185,6 +182,9 @@ header h1 {
   .parent {
     gap: 10px;
   }
+  .stars i{
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -216,19 +216,15 @@ header h1 {
     width: 100%;
     padding: 15px;
   }
-
-  .element1 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
   .hp {
     align-items: center;
   }
 
   .stars {
-    align-self: flex-start;
+    align-self: flex-end;
+  }
+  .stars i{
+    font-size: 0.7rem;
   }
 
   img {
@@ -246,52 +242,29 @@ header h1 {
 }
 
 
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
+@media (max-width: 425px) {
 
-  .subtitle {
-    font-size: 1rem;
-  }
-
-  .div1,
-  .div2,
-  .div3,
-  .div4,
-  .div5,
-  .div6,
-  .div7 {
-    padding: 10px;
-  }
-
-  .element1 {
-    gap: 8px;
-  }
-
-  img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .gran_p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  body {
-    padding: 20px 0;
-  }
-}
-
-
-@media (max-width: 360px) {
   header h1 {
     font-size: 1.3rem;
   }
 
+  .element1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hp {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
   .tt h3 {
     font-size: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 
   .tt p {
@@ -300,5 +273,46 @@ header h1 {
 
   .gran_p {
     font-size: 0.85rem;
+  }
+  .stars{
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .element1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hp {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .tt h3 {
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tt p {
+    font-size: 0.8rem;
+  }
+
+  .gran_p {
+    font-size: 0.85rem;
+  }
+  .stars{
+    margin: 0 auto;
   }
 }
